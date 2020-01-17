@@ -8,13 +8,9 @@ from splinter import Browser
 from bs4 import BeautifulSoup
 
 
-# # In[2]:
 
 
 # get_ipython().system('which chromedriver')
-
-
-# # In[3]:
 
 
 
