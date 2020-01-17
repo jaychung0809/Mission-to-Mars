@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 
 
 
-# get_ipython().system('which chromedriver')
+get_ipython().system('which chromedriver')
 
 
 
