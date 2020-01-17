@@ -13,7 +13,6 @@ from bs4 import BeautifulSoup
 get_ipython().system('which chromedriver')
 
 
-
 # In[4]:
 def mars_news(browser):
 
