@@ -31,7 +31,7 @@ def mars_news(browser):
 
    # Convert the browser html to a soup object and then quit the browser
    html = browser.html
-   news_soup = soup(html, 'html.parser')
+   news_soup = BeautifulSoup(html, 'html.parser')
    slide_elem = news_soup.select_one('ul.item_list li.slide')
    # Use the parent element to find the first <a> tag and save it as `news_title`
    news_title = slide_elem.find("div", class_='content_title').get_text()
@@ -91,5 +91,3 @@ def mars_facts():
     df.columns=['description', 'value']
     df.set_index('description', inplace=True)
     return df.to_html()
-
-
